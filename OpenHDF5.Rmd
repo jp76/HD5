@@ -111,7 +111,7 @@ mapInfo
 mapInfo[3]
 
 #define upper left hand corner coordinate
-xmin <- as.numeric(mapInfo[4])
+xMin <- as.numeric(mapInfo[4])
 yMax <- as.numeric(mapInfo[5])
 
 #get spatial resolution 
@@ -135,9 +135,18 @@ b56r <-raster(b56, crs=CRS("+init=epsg:32611"))
 extent(b56r) <- rasExt
 b56r
 
-plot(b56r, main=Spatially referenced data)
+plot(b56r, main=Spatially reflectance data)
 
 ```
+#import Neon Functions
+```{r}
+library(devtools)
+library(ggplot2)
+  
+
+
+```
+
 
 
 
